@@ -69,7 +69,7 @@ body{
   
  
 }
-.advice-id{
+#advice-id{
     color: var(--Neon-Green);
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -133,6 +133,7 @@ body{
 
 .attribution { 
     position: absolute;
+    left: 10px;
     bottom: -15rem;
     font-size: 12px; 
     text-align: center; 
@@ -141,6 +142,7 @@ body{
 
 }
 .attribution a {
+    text-align: center;
      color:var(--Neon-Green); 
 }
 @media screen and (max-width:550px){
