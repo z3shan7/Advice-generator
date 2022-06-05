@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root{
+    
+/* ## Colors */
+
+/* ### Primary */
+
+ --Light-Cyan: hsl(193, 38%, 86%);
+ --Neon-Green: hsl(150, 100%, 66%);
+
+/* ### Neutral */
+
+--Grayish-Blue: hsl(217, 19%, 38%);
+--Dark-Grayish-Blue: hsl(217, 19%, 24%);
+--Dark-Blue: hsl(218, 23%, 16%);
+
+/* ## font */
+--font-Manrope: 'Manrope', sans-serif;
+
+
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+/* ------- removes default margins paddings ------ */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+body{
+    background-color: var(--Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--font-Manrope);
+    min-height: 100vh;
+}
+.advice-card{
+    background-color: var(--Dark-Grayish-Blue);
+    width: 92%;
+    max-width: 520px;
+    height: auto;
+    border-radius: 15px;
+    text-align: center;
+    padding: 3rem;
+    position: relative;
+    -webkit-box-shadow: 3px 3px 46px -10px rgba(0,0,0,0.69);
+    -moz-box-shadow: 3px 3px 46px -10px rgba(0,0,0,0.69);
+    box-shadow: 3px 3px 46px -10px rgba(0,0,0,0.69);
+  
+ 
+}
+.advice-id{
+    color: var(--Neon-Green);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.advice-text{
+    margin-top: 1.5rem;
+    color: var(--Light-Cyan);
+    font-size: 28px;
+    margin-bottom: 1rem;
+   
+}
+.hide-advice{
+    display: none;
+}
+.loading{
+    margin: 40px auto;
+    width: 70px;
+    transition: transform 500ms linear;
+    animation: loader 2s forwards infinite;
+    
+}
+.hide-loading{
+    display: none;
+}
+@keyframes loader {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+    
+}
+
+
+.divider-desktop{
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+
+}
+.divider-mobile{
+    display: none;
+}
+
+.diceImg {
+    background-color: var(--Neon-Green);
+    padding: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: -32px;
+    cursor: pointer;
+    transform: translateX(-50%);
+    transition: all 300ms ease-in-out;
+}
+  .diceImg:hover,
+.diceImg:focus {
+  box-shadow: 0rem 0rem 2.5rem var(--Neon-Green);
+}
+
+.attribution { 
+    position: absolute;
+    bottom: -15rem;
+    font-size: 12px; 
+    text-align: center; 
+    color: white;
+    letter-spacing: 2px;
+
+}
+.attribution a {
+     color:var(--Neon-Green); 
+}
+@media screen and (max-width:550px){
+    .advice-text{
+        font-size: 20px;
+    }
+    .divider-desktop{
+        display: none;
+    }
+    .divider-mobile{
+        display: block;
+        margin: auto;
+
+    }
+
+}
+
