@@ -29,7 +29,7 @@ const getAdvice = async () =>{
 
 }
 adviceBtn.addEventListener('click',getAdvice) ;
-window.addEventListener('DOMContentLoaded',getAdvice);
+// window.addEventListener('DOMContentLoaded',getAdvice);
     
 
 
